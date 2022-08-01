@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600&family=Courgette&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;600;700&family=Montserrat:wght@500;700&display=swap');*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    position: relative;
+}
+
+.main{
+    border-radius: 6px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+    width: auto;
+    height: 450px;
+    background-color: white;
+    top: 25vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main  img{
+    width: 100%;
+}
+.image img{
+    border-radius: 6px 0 0 6px;
+}
+.image2{
+    display: none;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+.text h1{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+}
+.text h2{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: .8rem;
+}
+.text p{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+}
+.price h1{
+    color: #3F826B;
+}
+.price span{
+    font-size: .8rem;
+    padding-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #1A4031;
+    border: none;
+    padding: 15px 30px;
+    outline: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.button img{
+    width: 20px;
+    height: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 620px) {
+    .main{
+        overflow: hidden;
+        border-radius: 6px;
+        position: relative;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 357px;
+        background-color: white;
+        height: auto;
+    }
+    .image{
+        display: none;
+        border-radius: 0;
+
+    }
+    .image2{
+        height: 253px;
+        width: 357px;
+        border-radius: 0;
+        display: block;
+    }
+    
+}

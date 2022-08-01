@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600&family=Courgette&family=Inter:wght@100;400;600;700&display=swap');:root {
+    --border-color: #252430;
+}
 *{
     margin: 0;
     padding: 0;
@@ -6,20 +9,14 @@
 .container{
     position: relative;
     width: 100%;
-    height: 100%;
+
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     overflow: hidden;
-}
-
-.container i{
-    content: '';
-    background: #fff;
-    border-radius: 50%;
-    
 }
 .header{
     width: 100%;
     position: relative;
+    margin-bottom: 50px;
 }
 .header img{
     width: 100%;
@@ -38,125 +35,22 @@
 }
 
 .main-title{
+    font-family: 'Chakra Petch', sans-serif;
     font-size: 3rem;
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
+    color: var(--border-color)
     z-index: 2;
-    color: white;
 }
-.cloud1 img{
-    position: absolute;
-    bottom: 200px;
-    left: 0;
-    z-index: 10;
-    max-width: 500px;
-    animation: moveit 60s linear infinite;
-}
-.cloud2 img{
-    position: absolute;
-    bottom: 200px;
-    left: 0;
-    max-width: 500px;
-    z-index: 10;
-    animation: moveit 50s linear infinite;
-}
-.cloud3 img{
-    position: absolute;
-    bottom:200px;
-    left: 0;
-    max-width: 650px;
-    z-index: 10;
-    animation: moveit 60s linear infinite;
-}
-.cloud4 img{
-    position: absolute;
-    bottom: 300px;
-    left: 0;
-    max-width: 600px;
-    z-index: 10;
-    animation: moveit 65s linear infinite;
-    animation-delay: -15s;
-}
-.cloud5 img{
-    position: absolute;
-    bottom: 200px;
-    left: 0;
-    z-index: 10;
-    max-width: 500px;
-    animation: moveit 55s linear infinite;
-    animation-delay: -5s;
-}
-.cloud6 img{
-    position: absolute;
-    bottom: 300px;
-    left: 0;
-    z-index: 10;
-    max-width: 650px;
-    animation: moveit 30s linear infinite;
-    animation-delay: -8s;
-}
-.cloud7 img{
-    position: absolute;
-    bottom: 300px;
-    left: 0;
-    z-index: 10;
-    max-width: 650px;
-    animation: moveit 30s linear infinite;
-    animation-delay: -13s;
-}
-.cloud8 img{
-    position: absolute;
-    bottom: 00px;
-    left: 0;
-    z-index: 10;
-    max-width: 650px;
-    animation: moveit 30s linear infinite;
-    animation-delay: -10s;
-}
-.cloud9 img{
-    position: absolute;
-    bottom: 300px;
-    left: 0;
-    z-index: 10;
-    max-width: 700px;
-    animation: moveit 25s linear infinite;
-    animation-delay: -12s;
-}
-.cloud10 img{
-    position: absolute;
-    bottom: 300px;
-    left: 0;
-    z-index: 10;
-    max-width: 650px;
-    animation: moveit 35s linear infinite;
-    animation-delay: -9s;
-}
-.cloud11 img{
-    position: absolute;
-    bottom: 300px;
-    left: 0;
-    z-index: 10;
-    max-width: 650px;
-    animation: moveit 30s linear infinite;
-    animation-delay: -15s;
-}
-@keyframes moveit {
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(400%);
-    }
-}
-.bigcloud{
+.bigcloud1{
     width: 100%;
     position: absolute;
     bottom: 0px;
     left: 0;
     z-index: 10;
-    animation: moveitbig 80s linear infinite;
+    animation: moveitbig 45s linear infinite;
 }
 .bigcloud2{
     width: 100%;
@@ -164,13 +58,100 @@
     bottom: 00px;
     left: 0;
     z-index: 10;
-    animation: moveitbig 85s linear infinite;
+    animation: moveitbig 48s linear infinite;
+    animation-delay: -7s;
+}
+.bigcloud3{
+    width: 100%;
+    position: absolute;
+    bottom: 00px;
+    left: 0;
+    z-index: 10;
+    animation: moveitbig 50s linear infinite;
+}
+.bigcloud4{
+    width: 100%;
+    position: absolute;
+    bottom: 00px;
+    left: 0;
+    z-index: 10;
+    animation: moveitbig 47s linear infinite;
+    animation-delay: -5s;
 }
 @keyframes moveitbig {
     0%{
         transform: translateX(-100%);
     }
     100%{
-        transform: translateX(400%);
+        transform: translateX(100%);
     }  
+}
+.projects-container{
+    width: 100%;
+    margin: 10px 50px 10px 50px;
+}
+.content-left{
+    font-family: 'Chakra Petch', sans-serif;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-right: 100px;
+}
+.content-left img{
+    border: 4px solid var(--border-color);
+    border-radius: 5%;
+    width: 350px;
+    transition: all 1s;
+    margin-right: 50px;
+}
+.content-left img:hover{
+    transform: scale(1.05);
+}
+.content-left h2{
+    color: var(--border-color);
+    font-size: 2rem;
+}
+.content-left p{
+    color: var(--border-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.description-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+
+.content-right{
+    margin: 100px 0;
+    font-family: 'Chakra Petch', sans-serif;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.content-right img{
+    border: 4px solid var(--border-color);
+    border-radius: 5%;
+    width: 350px;
+    transition: all 1s;
+    margin-right: 100px;
+}
+.content-right img:hover{
+    transform: scale(1.05);
+}
+.content-right h2{
+    color: var(--border-color);
+    font-size: 2rem;
+}
+.content-right p{
+    color: var(--border-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.description-right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 50px;
+    text-align: end;
 }
